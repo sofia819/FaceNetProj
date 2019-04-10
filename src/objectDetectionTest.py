@@ -14,6 +14,29 @@ class ListStream:
     def write(self, s):
         self.data.append(s)
 
+# Image processing method 1 - USING
+def increase_brightness(img, value = 30):
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    h, s, v = cv2.split(hsv)
+
+    lim = 255 - value
+    v[v > lim] = 255
+    v[v <= lim] += value
+
+    final_hsv = cv2.merge((h, s, v))
+    img = cv2.cvtColor(final_hsv, cv2.COLOR_HSV2BGR)
+    return img
+# Image processing method 2 - TESTING
+def histEq(img):
+    img_yuv = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
+
+    # equalize the histogram of the Y channel
+    img_yuv[:,:,0] = cv2.equalizeHist(img_yuv[:,:,0])
+
+    # convert the YUV image back to RGB format
+    img_output = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR)
+
+    return img_output
 
 # turn off stdout because facenet has so many messages...
 old_stdout = sys.stdout
@@ -112,30 +135,36 @@ while (cap.isOpened()):
 
     # display stream - capture frame by frame
     ret, frame = cap.read()
+    # brighten input so facenet can detect face better
+    bframe = increase_brightness(frame)
 
     # AN- FACE DETECTION WITH HAAR CASCADE
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    gray = cv2.cvtColor(bframe, cv2.COLOR_BGR2GRAY)
+    # detectMultiScale() returns a rectangle with coordinates (x,y,w,h) around detected face
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+
+    # Display text to frame in opencv if no face detected
 
     # AN - Draw bounding box
     for(x,y,w,h) in faces:
-        cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
+        cv2.rectangle(bframe, (x, y), (x+w, y+h), (255, 0, 0), 2)
 
     # AN - Display results
-    cv2.imshow('Bounding Box', frame)
+    cv2.imshow('Bounding Box', bframe)
 
-    # listen for keypress - CHANGE SO THAT IT'LL TAKE A PHOTO EVERYTIME SEES FACE
+    # listen for keypress
     c = cv2.waitKey(1) % 256
 
-    # if 'c' is pressed - ord returns integer representation of character
-    if c == ord('c'):
+    # if 'c' is pressed - ord() returns integer representation of character
+    # MAKE SURE USER CAN'T TAKE SCREENSHOT IF NO BOUNDING BOX
+    if (c == ord('c') and len(faces) == 1):
         # delete from capDataAligned
         alignedCapPic = (capDataAligned + "%s" + "cap" + "%s" + "capture.png") % (slash, slash)
         if os.path.isfile(alignedCapPic):
             os.remove(alignedCapPic)
 
         # save input in capData
-        cv2.imwrite(saved, frame)
+        cv2.imwrite(saved, bframe)
 
         # align captured frame from capData to capDataAligned
         # Take image from cap/cap, align, and save to cap_aligned/cap
@@ -148,11 +177,12 @@ while (cap.isOpened()):
         if os.path.isfile(alignedCapPic):
             # AN- Image captured from webcam
             capturedFrame = cv2.imread(saved, cv2.IMREAD_COLOR)
-            # AN- Convert to gray just for processing
-            capturedFrame_Gray = cv2.cvtColor(capturedFrame, cv2.COLOR_BGR2GRAY)
-            cv2.imshow("CAPTURED", capturedFrame)
 
-            # AN- alignedImage = "Template to compare with"
+            # AN- Convert above image to gray just for processing
+            capturedFrame_Gray = cv2.cvtColor(capturedFrame, cv2.COLOR_BGR2GRAY)
+            cv2.imshow("ORIGINAL CAPTURED", capturedFrame)
+
+            # AN- alignedImage = "Template to compare with" - grayscaled
             alignedImage = cv2.imread(alignedCapPic, 0)
             cv2.imshow("ALIGNED", alignedImage)
 
@@ -162,9 +192,10 @@ while (cap.isOpened()):
             thresholdFace = 0.80
             # Returns array where fits requirement
             loc = np.where(res >= thresholdFace)
+
             # AN - DRAW a rectangle on capturedFrame where it is found
             for pt in zip(*loc[::-1]):
-                cv2.rectangle(capturedFrame, pt, (pt[0]+w, pt[1]+h), (0,0,255), 15)
+                cv2.rectangle(capturedFrame, pt, (pt[0]+w, pt[1]+h), (0, 0, 255), 15)
             cv2.imshow("FACE DETECTION", capturedFrame)
 
             # test classifier with captured frame
@@ -173,9 +204,6 @@ while (cap.isOpened()):
 
             # parse last output -> [first, last, accuracy]
             result = output.data[-4].split(" ")[-3:]
-
-            # debug
-            print("%s" % (result[0]))
 
             # turn on stdout to print out result
             sys.stdout = old_stdout
