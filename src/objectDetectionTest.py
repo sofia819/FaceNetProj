@@ -100,21 +100,32 @@ print("%s %s" % (name, result[-1]))
 
 '''
 
-# take input from webcam
+# AN- FACE DETECTION WITH HAAR CASCADE
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+
+# load webcam
 cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 800)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)
+
 while (cap.isOpened()):
 
-    # display stream
+    # display stream - capture frame by frame
     ret, frame = cap.read()
 
-    cv2.imshow('Webcam', frame)
+    # AN- FACE DETECTION WITH HAAR CASCADE
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+
+    # AN - Draw bounding box
+    for(x,y,w,h) in faces:
+        cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
+
+    # AN - Display results
+    cv2.imshow('Bounding Box', frame)
 
     # listen for keypress - CHANGE SO THAT IT'LL TAKE A PHOTO EVERYTIME SEES FACE
     c = cv2.waitKey(1) % 256
-
-    # check if face is detected first, maybe show bounding boxes and update per 3-5 frames
 
     # if 'c' is pressed - ord returns integer representation of character
     if c == ord('c'):
@@ -135,13 +146,13 @@ while (cap.isOpened()):
 
         # check if an aligned picture was generated
         if os.path.isfile(alignedCapPic):
-            # Image captured from webcam
+            # AN- Image captured from webcam
             capturedFrame = cv2.imread(saved, cv2.IMREAD_COLOR)
-            # Convert to gray just for processing
+            # AN- Convert to gray just for processing
             capturedFrame_Gray = cv2.cvtColor(capturedFrame, cv2.COLOR_BGR2GRAY)
             cv2.imshow("CAPTURED", capturedFrame)
 
-            # alignedImage = "Template to compare with"
+            # AN- alignedImage = "Template to compare with"
             alignedImage = cv2.imread(alignedCapPic, 0)
             cv2.imshow("ALIGNED", alignedImage)
 
