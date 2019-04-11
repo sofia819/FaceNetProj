@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca985696-f8f8-45bd-975c-e02315a78ec7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FaceNetProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FaceNetProj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datasets/cap/cap/capture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/cap/cap/capture.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datasets/cap_aligned/cap/capture.png" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/cap_aligned/cap/capture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/facenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/facenet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objectDetectionTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectDetectionTest.py" afterDir="false" />
     </list>
-    <ignored path=".idea/" />
-    <ignored path=".idea" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,22 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/facenet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/objectDetectionTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="420">
+              <caret line="148" column="84" selection-start-line="148" selection-start-column="84" selection-end-line="148" selection-end-column="84" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -46,24 +28,23 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>increase_brightness</find>
+      <find>bframe</find>
+      <find>histEq</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/autoSnapshot.py" />
         <option value="$PROJECT_DIR$/src/objectDetectionTest.py" />
-        <option value="$PROJECT_DIR$/src/facenet.py" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="27" />
-    <option name="width" value="1037" />
-    <option name="height" value="665" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
@@ -76,6 +57,11 @@
             <path>
               <item name="FaceNetProj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/FaceNetProj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="FaceNetProj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/FaceNetProj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="datasets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="FaceNetProj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -101,11 +87,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FaceNetProjGUI" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -119,39 +100,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="buildOnly" value="true" />
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ca985696-f8f8-45bd-975c-e02315a78ec7" name="Default Changelist" comment="" />
-      <created>1554773540434</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1554773540434</updated>
-      <workItem from="1554773542146" duration="3200000" />
-    </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3200000" />
-  </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="27" width="1037" height="665" extended-state="0" />
+    <frame x="67" y="27" width="2094" height="1292" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22682446" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12071463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -165,7 +124,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19589552" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.14961307" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32901135" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -174,54 +133,91 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile" />
-    <entry file="file://$PROJECT_DIR$/models/20180408-102900.pb">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/classifier.pkl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/cap/cap/capture.jpg">
+    <entry file="file://$PROJECT_DIR$/datasets/originals/An_Huynh/An_Huynh_0092.JPG">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/cap_aligned/cap/capture.png">
+    <entry file="file://$PROJECT_DIR$/datasets/originals/An_Huynh/An_Huynh_0091.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/objectDetectionTest.py">
+    <entry file="file://$PROJECT_DIR$/datasets/originals/An_Huynh/An_Huynh_0005.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/originals/An_Huynh/An_Huynh_0004.JPG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/originals/An_Huynh/An_Huynh_0002.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/originals/An_Huynh/An_Huynh_0001.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facenet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/facenet.py">
+    <entry file="file://$PROJECT_DIR$/src/opencv1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/opencv3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/opencv9.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/opencv8.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/opencv6.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/opencv5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/opencv4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/opencv2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/opencv0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="56" column="10" lean-forward="true" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/objectDetectionTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="148" column="84" selection-start-line="148" selection-start-column="84" selection-end-line="148" selection-end-column="84" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

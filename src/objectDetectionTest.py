@@ -143,7 +143,10 @@ while (cap.isOpened()):
     # detectMultiScale() returns a rectangle with coordinates (x,y,w,h) around detected face
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
-    # Display text to frame in opencv if no face detected
+    # Display text to bframe in opencv if no face detected
+    if (len(faces) != 1):
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        cv2.putText(bframe, 'ADJUST FACE PLEASE', (20, 250), font, 1, (0, 0, 255), 3, cv2.LINE_AA)
 
     # AN - Draw bounding box
     for(x,y,w,h) in faces:
