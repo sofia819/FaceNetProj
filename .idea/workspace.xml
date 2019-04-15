@@ -5,8 +5,36 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datasets/cap/cap/capture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/cap/cap/capture.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datasets/cap_aligned/cap/capture.png" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/cap_aligned/cap/capture.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objectDetectionTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/objectDetectionTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals/Tin_Wong/Tin_Wong_0001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals/Tin_Wong/Tin_Wong_0002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals/Tin_Wong/Tin_Wong_0003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals/Tin_Wong/Tin_Wong_0004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals/Tin_Wong/Tin_Wong_0005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals/Tin_Wong/Tin_Wong_0006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals/Tin_Wong/Tin_Wong_0007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals/Tin_Wong/Tin_Wong_0008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/originals/Tin_Wong/Tin_Wong_0009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0009.jpg" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/venv/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +42,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/objectDetectionTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="148" column="84" selection-start-line="148" selection-start-column="84" selection-end-line="148" selection-end-column="84" />
+            <state relative-caret-position="120">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mqtt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +80,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/autoSnapshot.py" />
         <option value="$PROJECT_DIR$/src/objectDetectionTest.py" />
+        <option value="$PROJECT_DIR$/src/mqtt.py" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="2094" />
+    <option name="height" value="1292" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
@@ -62,6 +106,24 @@
               <item name="FaceNetProj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/FaceNetProj" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="datasets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FaceNetProj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/FaceNetProj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="datasets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="originals" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FaceNetProj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/FaceNetProj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="datasets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="originals (not enhanced)" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FaceNetProj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/FaceNetProj" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="datasets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="train" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="FaceNetProj" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -87,6 +149,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -104,6 +167,13 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca985696-f8f8-45bd-975c-e02315a78ec7" name="Default Changelist" comment="" />
+      <created>1555179646213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555179646213</updated>
+    </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -124,7 +194,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.14961307" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.29173988" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32901135" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -162,64 +232,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/opencv1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/opencv3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/opencv9.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/opencv8.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/opencv6.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/opencv5.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/opencv4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/opencv2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/opencv0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/autoSnapshot0.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/autoSnapshot4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/autoSnapshot3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/autoSnapshot2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/autoSnapshot1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/autoSnapshot.py">
+    <entry file="file://$PROJECT_DIR$/src/opencv1.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/opencv3.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/opencv9.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/opencv8.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/opencv6.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/opencv5.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/opencv4.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/opencv2.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/opencv0.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot0.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot4.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot3.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot2.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot1.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/autoSnapshot.py" />
+    <entry file="file://$PROJECT_DIR$/datasets/train/Tin_Wong/Tin_Wong_0001.jpg" />
+    <entry file="file://$PROJECT_DIR$/datasets/originals (not enhanced)/Tin_Wong/Tin_Wong_0001.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/objectDetectionTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/objectDetectionTest.py">
+    <entry file="file://$PROJECT_DIR$/src/mqtt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="148" column="84" selection-start-line="148" selection-start-column="84" selection-end-line="148" selection-end-column="84" />
+        <state relative-caret-position="48">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
